@@ -1,0 +1,43 @@
+{
+  "name": "brokelads",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "15.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "getDummyFixtures": "node -r esm ./dummyFixturesData/getDummyFixtures.js",
+    "saveDummyFixtures": "node -r esm ./dummyFixturesData/saveDummyFixtures.js",
+    "getPrac": "nodemon -r esm ./externalData/getNextFixtures.js",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install --legacy-peer-deps && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "memorystore": "^1.6.6",
+    "mongodb": "^3.6.5",
+    "mongoose": "^5.12.2",
+    "node-schedule": "^2.0.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
