@@ -36,7 +36,7 @@ const PlaceBetFormContent = ({ user, fixture, prediction, ...props }) => {
         fixture={fixture}
         prediction={prediction}
         name="potentialWinnings"
-        label={`Returns: stake + (stake * ${fixture.odds[prediction]})`}
+        label={`Returns: stake * ${fixture.odds[prediction]}`}
       />
     </>
   );
