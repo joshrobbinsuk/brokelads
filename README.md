@@ -2,8 +2,6 @@
 
 Betting site (pretend money) built with the MERN stack (MongoDB, Express, React and Node).
 
-Check it out: https://brokelads.herokuapp.com/
-
 ## Local setup
 
 `npm run dev` in the root folder and `npm start` in the client folder to run locally.
